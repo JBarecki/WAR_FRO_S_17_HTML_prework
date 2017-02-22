@@ -1,0 +1,33 @@
+div {
+  width: 30%;
+  height: 200px;
+  background-color: FireBrick;
+  display: inline-block;
+  position: relative;
+
+}
+
+p {
+  width: 19%;
+  height: 200px;
+  font-size: 24px;
+  color: grey;
+  border: 2px dashed grey;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+#prawy {
+/*right: -40%;*/
+float: right;
+}
+
+#p-lewy {
+  float: left;
+  margin-left: 30%;
+}
+
+#p-prawy {
+  float: right;
+  margin-right: 30%;
+}

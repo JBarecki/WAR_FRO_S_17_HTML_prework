@@ -1,0 +1,37 @@
+div {
+width: 500px;
+
+}
+
+
+.naglowek {
+  font-family: Verdana;
+  font-size: 20px;
+  color: white;
+  text-shadow: 3px 1px 14px #878787;
+  background-color: #ACC4CE;
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 7px;
+}
+
+.podtytul {
+  font-family: Arial;
+  font-style: italic;
+  letter-spacing: 10px;
+  color: #395075;
+
+}
+
+.text-glowny {
+font-family: sans-serif;
+font-size: 14px;
+text-indent: 20px;
+font-weight: 300;
+color: grey;
+line-height: 20px
+
+
+
+
+}

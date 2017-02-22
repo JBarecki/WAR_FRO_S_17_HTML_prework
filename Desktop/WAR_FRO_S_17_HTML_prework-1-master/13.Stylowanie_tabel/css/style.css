@@ -1,0 +1,17 @@
+/*th, td, table {
+  border: 1px solid black;
+  padding: 2px;
+  border-collapse: separate;   z własnym borderem
+  } */
+
+thead {
+  background-color: rgb(0, 0, 200);
+  color: white;
+  font-weight: 700;
+}
+
+th, td, table {
+  border: 1px solid black;
+  padding: 2px;
+  border-collapse: collapse; /* z połączonym borderem */
+  }

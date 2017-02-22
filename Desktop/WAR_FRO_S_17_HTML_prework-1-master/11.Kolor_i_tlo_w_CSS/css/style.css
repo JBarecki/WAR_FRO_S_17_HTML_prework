@@ -1,0 +1,29 @@
+.div1 {
+/*background-color: rgba(120, 255, 23, 0.4);
+background-color: rgb(120, 255, 23);
+opacity: 0.4;*/
+background: -webkit-linear-gradient(top, rgba(96,209,232,1) 0%,
+rgba(117,189,209,1) 44%,
+rgba(23,175,209,1) 100%);
+}
+
+/* W drugim przypadku przezroczystości
+obu elementów nakładają się na siebie,
+przysłaniając elementy w środku, przez co tekst
+(w tym przypadku), zmienia kolor, staje się "przefiltrowany"
+przez kolor tła.*/
+
+
+.div-tlo {
+background-image: url("tlo1.jpg");
+
+}
+
+.div-tlo2 {
+width: 100%;
+height: 533px;
+background: url("tlo1.jpg") no-repeat center;
+/*background-size: cover;*/
+}
+
+/* Ustawiłem wysokośc na wysokość obrazka (533px).*/
