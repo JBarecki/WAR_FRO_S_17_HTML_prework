@@ -1,0 +1,19 @@
+*{
+border: 0.5px solid black;
+
+}
+
+
+a {
+color: red;
+border-color: red;
+width: 500px;
+
+}
+
+p {
+color: red;
+border-color: red;
+width: 500px;
+
+}

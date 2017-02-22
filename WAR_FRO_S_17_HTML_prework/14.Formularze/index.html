@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<!-- •••••••••••••••••••••••••••••••••••••••••••••••••  -->
+
+<body>
+  <form>
+    <label class="label-f1" for="name">Your name:</label>
+      <input class="input-f1" type="text" name="name" placeholder="Your name">
+
+    <label class="label-f1" for="mail">Your E-mail Address:</label>
+      <input class="input-f1" type="text" name="mail" placeholder="Your e-mail">
+
+    <label class="label-f1" for="mail">Your message:</label>
+      <textarea cols="50" rows="10" placeholder="Please describe your question or comment"></textarea>
+
+    <input class="guzik" type="submit" name="button" value="Send">
+  </form>
+
+
+<!-- •••••••••••••••••••••••••••••••••••••••••••••••••  -->
+
+<form>
+  <h1>Run your inteligent robo-car</h1>
+
+  <label>Select country:
+    <div class="menu">
+      <input type="radio" name="kraj" value="1" checked>Poland:
+      <input type="radio" name="kraj" value="2" checked>US:
+      <input type="radio" name="kraj" value="3" checked>San Marino:
+   </div>
+ </label>
+
+ <label>Select Car:
+   <div class="menu">
+     <input type="radio" name="samochod" value="1" checked>BMW:
+     <input type="radio" name="samochod" value="2" checked>Jaguar:
+    </div>
+  </label>
+
+    <label>When?
+      <div class="menu">
+        <label class="opis-pola" for="data">Date:</label>
+        <input type="textarea" name="data" placeholder="dd.mm.rr">
+      </div>
+    </label>
+
+<label>Start engine.
+    <div class="menu">
+      <label class="opis-pola" for="password">Enter password*</label>
+        <input type="password" name="password">
+   </div>
+</label>
+
+  <input class="guzik" type="submit" value="RUN YOUR CAR">
+</form>
+
+</body>
+</html>
