@@ -1,0 +1,246 @@
+/* ****************** MAIN PAGE *********************** */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+
+
+/* ****************** MAIN PAGE HEADER ************************** */
+
+@keyframes headerIn {
+  0% {
+   transform: scale(0.3) translate(0, -300%);
+  }
+  100% {
+   transform: translate(0, 0);
+  }
+}
+
+@keyframes headerOut {
+  0% {
+   transform: translate(0, 0) scale(1);
+  }
+  100% {
+   transform: translate(0, -100%) scale(0.3);
+  }
+}
+
+@keyframes headerLogoIn {
+  0% {
+   transform: translate(0, -250%) scale(0.7);
+}
+  100% {
+   transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes headerTextIn {
+  0% {
+   color: transparent;
+}
+  100% {
+   color: black;
+  }
+}
+
+/* ****************** MENU ************************** */
+
+@keyframes contact {
+  0% {
+   transform: translate(300%, 0) rotate(45deg) ;
+  }
+  100% {
+   transform: translate(0, 0) rotate(45deg) ;
+  }
+}
+
+@keyframes peppers {
+  0% {
+   transform: translate(-300%, 0) rotate(45deg);
+  }
+  100% {
+   transform: translate(0, 0) rotate(45deg);
+  }
+}
+
+@keyframes growing {
+  0% {
+   transform: translate(-220%, 0) rotate(45deg);
+  }
+  100% {
+   transform: translate(0, 0) rotate(45deg);
+  }
+}
+
+@keyframes aboutUs {
+  0% {
+   transform: translate(220%, 0) rotate(45deg);
+  }
+  100% {
+   transform: translate(0, 0) rotate(45deg);
+  }
+}
+
+@keyframes home {
+  0% {
+   transform: scale(15) rotate(45deg);
+   border: 3rem solid black;
+ }
+  100% {
+   transform: scale(1.4) rotate(225deg);
+  }
+}
+
+@keyframes seeds {
+  0% {
+   transform: translate(-100%, 0) rotate(45deg);
+  }
+  100% {
+   transform: translate(0, 0) rotate(45deg);
+  }
+}
+
+@keyframes gallery {
+  0% {
+   transform: translate(100%, 0) rotate(45deg);
+  }
+  100% {
+   transform: translate(0, 0) rotate(45deg);
+  }
+}
+
+@keyframes menuPeppersBefore {
+  0% {
+   transform: translate(400%, 0) scale(0.3);
+  }
+  100% {
+   transform: translate(0, 0) scale(2.3) rotate(35deg);
+  }
+}
+
+@keyframes menuPeppersAfter {
+  0% {
+   transform: translate(-400%, 0) scale(0.3);
+  }
+  100% {
+   transform: translate(0, 0) scale(2.3) rotate(-35deg);
+  }
+}
+
+@keyframes sectionOut {
+  0% {
+   transform: translate(0, 0);
+}
+  100% {
+   transform: translate(100%, 0);
+  }
+}
+
+/* ****************** MAIN PAGE FOOTER ************************** */
+
+@keyframes footerIn {
+  0% {
+    transform: scale(0.4) translate(0, 220%) rotate(180deg);
+  }
+  100% {
+    transform: scale(1.3) translate(0, 25%) rotate(180deg);
+  }
+}
+
+@keyframes footerOut {
+  0% {
+    transform: scale(1.3) translate(0, 0) rotate(180deg);
+  }
+  100% {
+    transform: scale(0.2) translate(0, -300%) rotate(180deg);
+  }
+}
+
+/* ****************** ABOUT US ************************ */
+/* **************************************************** */
+/* **************************************************** */
+/* **************************************************** */
+
+/* *************** ABOUT US HEADER ******************** */
+
+@keyframes aboutUsHeaderIn {
+  0% {
+   transform: translate(0, 300%) scale(0.2);
+ }
+  100% {
+  transform: translate(0, -50%) scale(1.9);
+  }
+}
+
+@keyframes aboutUsTitleTextIn {
+  0% {
+   color: transparent;
+ }
+  100% {
+  color: black;
+  }
+}
+
+@keyframes aboutUsHeaderOut {
+  0% {
+   transform: translate(0, -50%) scale(1.9);
+ }
+  100% {
+  transform: translate(0, -300%) scale(0.3);
+  }
+}
+
+/* *************** ABOUT US SECTION ******************** */
+
+@keyframes aboutUsSectionIn {
+  0% {
+   transform: translate(350%, 0);
+ }
+  100% {
+  transform: translate(0, -48%);
+  }
+}
+
+@keyframes aboutUsSectionOut {
+  0% {
+   transform: translate(0, -48%);
+ }
+  100% {
+  transform: translate(-300%, 0);
+  }
+}
+
+/* *************** ABOUT US FOOTER ******************** */
+
+@keyframes aboutUsFooterIn {
+  0% {
+   transform: translate(0, 0);
+ }
+  100% {
+  transform: translate(0, -90%) scale(0.65);
+  }
+}
+
+@keyframes aboutUsFooterBackIn {
+  0% {
+   transform: translate(0, 0) scale(1);
+ }
+50% {
+  transform: translate(200%, -400%) scale(20) rotate(180deg);
+  background-image: url("../images/paprika1.jpg");
+  background-size: cover;
+}
+  100% {
+  transform: translate(0, 0) scale(0.6) rotate(-45deg);
+  background-image: none;
+  background-color: red;
+  }
+}
+
+@keyframes aboutUsFooterOut {
+  0% {
+   transform: translate(0, 0);
+ }
+  100% {
+  transform: translate(0, 500%) scale(0.3);
+  }
+}

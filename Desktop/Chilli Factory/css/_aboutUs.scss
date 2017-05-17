@@ -1,0 +1,207 @@
+@import "css/mixins";
+/* ****************** ABOUT US HEADER *************************** */
+.aboutUsHeader {
+  width: 100%;
+  height: 30%;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("../images/paprykaTlo1.jpg");
+  @include imageContain;
+}
+
+.aboutUsTitle {
+  font-family:'Passion One', sans-serif;
+  font-size: 2.5rem;
+  margin-top: 5%;
+  margin-bottom: 1%;
+  color: black;
+  font-weight: 900;
+  z-index: 3;
+  text-align: center;
+    transform: translate(0, 15%);
+}
+
+.aboutUsHeaderPeppers {
+  width: 6rem;
+  height: 5rem;
+  transform: rotate(45deg);
+  background-image: url("../images/logoPeppers.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto;
+  z-index: 1;
+  transform: translate(0, -55%);
+}
+
+.aboutUsTitleText {
+  font-family:'Passion One', sans-serif;
+  width: 25%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+  z-index: 3;
+  transform: translate(0, -115%);
+}
+
+/* *********** ABOUT US HEADER ANIMATION CLASSES ***************** */
+.aboutUsHeaderIn {
+  animation: aboutUsHeaderIn 2.3s 0.7s ease-out both;
+}
+
+.aboutUsTitleTextIn {
+  animation: aboutUsTitleTextIn 2s 3.2s ease-out both;
+}
+
+.aboutUsHeaderOut {
+  animation: aboutUsHeaderOut 1.3s 0.2s ease-out both;
+}
+
+/* ****************** ABOUT US SECTION **************************** */
+.aboutUsSection {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aboutUsColumnText {
+  font-family:'Passion One', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.7rem;
+  color: black;
+  font-weight: 300;
+  text-align: justify;
+  float: left;
+  z-index: 3;
+}
+
+.aboutUsColumn1Title {
+  font-family:'Passion One', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  color: black;
+  margin: 0 auto;
+  transform: translate(0, -85%);
+}
+
+.aboutUsColumnRed {
+  width: 15%;
+  height: 0.8rem;
+  background-color: red;
+  margin: 0 auto;
+  position: absolute;
+    top: 3%;
+    left: 41%;
+}
+
+.aboutUsColumn {
+  width: 20%;
+  height: 100%;
+  margin: 3%;
+  position: relative;
+}
+
+.aboutUsColumn1Image {
+  width: 9rem;
+  height: 9rem;
+  transform: rotate(45deg);
+  //background-image: url("../images/habaneros1.jpg");
+  background-size: cover;
+  margin: 15%;
+  z-index: 0;
+    bottom: 83%;
+    left: -21%;
+}
+
+.aboutUsColumn2Image {
+  width: 9rem;
+  height: 9rem;
+  transform: rotate(45deg);
+//  background-image: url("../images/laos1.jpg");
+  background-size: cover;
+  position: absolute;
+    bottom: 83%;
+    left: -21%;
+    z-index: 2;
+}
+
+.aboutUsColumn3Image {
+  width: 9rem;
+  height: 9rem;
+  transform: rotate(45deg);
+//  background-image: url("../images/food1.jpg");
+  background-size: cover;
+  position: absolute;
+    bottom: 83%;
+    left: -21%;
+    z-index: 2;
+}
+
+/* *********** ABOUT US SECTION ANIMATION CLASSES ************** */
+.aboutUsSectionIn {
+  animation: aboutUsSectionIn 1.4s 1.6s ease-out both;
+}
+
+.aboutUsSectionOut {
+  animation: aboutUsSectionOut 1.3s 0.2s ease-out both;
+}
+
+/* ****************** FOOTER ******************************** */
+.aboutUsFooter {
+  width: 100%;
+  height: 25%;
+  background-image: url("../images/paprykaTlo1.jpg");
+  @include imageContain;
+  position: absolue;
+  bottom: 11%;
+  transform: scale(0.5);
+}
+
+.aboutUsFooterBack {
+  width: 12rem;
+  height: 12rem;
+  transform: rotate(45deg);
+  background-image: url("../images/paprika1.jpg");
+  background-size: cover;
+  margin: 0 auto;
+  border: 0.8rem solid white;
+  }
+
+.aboutUsFooterBackText {
+  font-family:'Passion One', sans-serif;
+  font-size: 3.7rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 2px 9px black;
+  transform: rotate(45deg);
+  position: absolute;
+    top: 4.2rem;
+    left: 2.4rem;
+}
+
+/* ************ ABOUT US FOOTER ANIMATION CLASSES ************* */
+.aboutUsFooterIn {
+  animation: aboutUsFooterIn 1.5s 2s ease-out both;
+}
+
+.aboutUsFooterBackIn {
+  animation: aboutUsFooterBackIn 2.5s 0.1s ease-out both;
+}
+
+.aboutUsFooterOut {
+  animation: aboutUsFooterOut 1.3s 0.2s ease-out both;
+}
+
+/* ****************** OUT ANIMATIONS **************************** */
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,315 @@
+/* ****************** MAIN CLASSES ********************* */
+/* ***************************************************** */
+body {
+  width: 100vw;
+  height: 100vh; }
+
+/* ****************** MIXINS ************************** */
+/* **************************************************** */
+/* ****************** HEADER ************************** */
+/* ***************************************************** */
+/* ***************************************************** */
+/* **************** HEADER ANIMATIONS ******************* */
+@keyframes header {
+  0% {
+    transform: scale(0.3) translate(0px, -1000px); }
+  100% {
+    transform: translate(0px, 0px); } }
+@keyframes headerLogo {
+  0% {
+    transform: translate(0px, -400px) scale(0.7); }
+  100% {
+    transform: translate(0px, 0px) scale(1); } }
+@keyframes headerText {
+  0% {
+    color: transparent; }
+  100% {
+    color: black; } }
+/* *************** HEADER CLASSES ***************** */
+header {
+  width: 100%;
+  height: 40%;
+  position: relative; }
+
+.headerContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url("../images/paprykaTlo1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 1;
+  animation: header 1.5s 0.5s ease-out both; }
+
+.logo {
+  width: 55%;
+  height: 55%;
+  margin: 0 auto;
+  z-index: 2;
+  background-image: url("../images/logo1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: headerLogo 1.3s 2s ease-out both; }
+
+.headerText {
+  width: 600px;
+  font-family: sans-serif;
+  font-weight: 900;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  color: black;
+  font-size: 32px;
+  line-height: 1.3em;
+  text-align: center;
+  position: absolute;
+  top: 270px;
+  left: 34%;
+  animation: headerText 3s 3s ease-out both; }
+
+/* ************ HEADER ANIMATION CLASSES **************** */
+.headerOut {
+  animation: header 1.5s 0.5s ease-out both reverse; }
+
+.headerLogoOut {
+  animation: headerLogo 1.3s 2s ease-out both reverse; }
+
+.headerTextOut {
+  animation: headerText 3s 3s ease-out both reverse; }
+
+/* ****************** SECTION ************************** */
+/* ***************************************************** */
+/* *************** SECTION ANIMATIONS ****************** */
+@keyframes contact {
+  0% {
+    transform: translate(500px, 0px) rotate(45deg); }
+  100% {
+    transform: translate(0px, 0px) rotate(45deg); } }
+@keyframes peppers {
+  0% {
+    transform: translate(-500px, 0px) rotate(45deg); }
+  100% {
+    transform: translate(0px, 0px) rotate(45deg); } }
+@keyframes growing {
+  0% {
+    transform: translate(-400px, 0px) rotate(45deg); }
+  100% {
+    transform: translate(0px, 0px) rotate(45deg); } }
+@keyframes aboutUs {
+  0% {
+    transform: translate(400px, 0px) rotate(45deg); }
+  100% {
+    transform: translate(0px, 0px) rotate(45deg); } }
+@keyframes home {
+  0% {
+    transform: scale(15) rotate(45deg);
+    border: 20px solid black; }
+  100% {
+    transform: scale(1.4) rotate(225deg); } }
+@keyframes seeds {
+  0% {
+    transform: translate(-180px, 0px) rotate(45deg); }
+  100% {
+    transform: translate(0px, 0px) rotate(45deg); } }
+@keyframes gallery {
+  0% {
+    transform: translate(180px, 0px) rotate(45deg); }
+  100% {
+    transform: translate(0px, 0px) rotate(45deg); } }
+@keyframes menuPeppersBefore {
+  0% {
+    transform: translate(600px, 0px) scale(0.3); }
+  100% {
+    transform: translate(0px, 0px) scale(2.2) rotate(35deg); } }
+@keyframes menuPeppersAfter {
+  0% {
+    transform: translate(-600px, 0px) scale(0.3); }
+  100% {
+    transform: translate(0px, 0px) scale(2.2) rotate(-35deg); } }
+/* *************** SECTION CLASSES ***************** */
+.menuPeppersBefore {
+  z-index: 0;
+  width: 180px;
+  height: 130px;
+  background-image: url("../images/ChilliTloLeft1.jpg");
+  background-size: cover;
+  transition: 0.3s;
+  animation: menuPeppersBefore 1.2s 2.6s ease-out both; }
+
+.menuPeppersAfter {
+  z-index: 0;
+  width: 180px;
+  height: 130px;
+  background-image: url("../images/ChilliTloRight1.jpg");
+  background-size: cover;
+  transition: 0.3s;
+  animation: menuPeppersAfter 1.2s 2.6s ease-out both; }
+
+.menuMain {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center; }
+
+.menuElement {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  border: 8px solid white;
+  transform: rotate(45deg);
+  transition: 0.4s; }
+
+.menuText {
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  font-weight: 900;
+  font-size: 25px;
+  text-align: center;
+  transform: rotate(-45deg);
+  position: relative;
+  right: -43px;
+  top: 38px;
+  left: 39px;
+  bottom: 20px;
+  z-index: 0;
+  transition: 0.4s; }
+
+.menuText:hover {
+  position: relative;
+  color: white;
+  text-shadow: 1px 2px 9px black; }
+
+.contact {
+  z-index: 2;
+  background-image: url("../images/jalapenos1.jpg");
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  background-size: cover;
+  transition: 0.3s;
+  animation: contact 1s 1.8s ease-out backwards; }
+
+.contact:hover {
+  z-index: 5;
+  transform: scale(1.4) rotate(45deg);
+  -webkit-filter: grayscale(0.1);
+  filter: grayscale(0.1); }
+
+.aboutUs {
+  z-index: 2;
+  background-image: url("../images/paprika1.jpg");
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  background-size: cover;
+  transition: 0.3s;
+  animation: aboutUs 1s 1.8s ease-out backwards; }
+
+.aboutUs:hover {
+  z-index: 5;
+  transform: scale(1.4) rotate(45deg);
+  -webkit-filter: grayscale(0.1);
+  filter: grayscale(0.1); }
+
+.gallery {
+  z-index: 3;
+  background-image: url("../images/spices1.jpg");
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  background-size: cover;
+  transition: 0.3s;
+  animation: gallery 1s 1.8s ease-out backwards; }
+
+.gallery:hover {
+  z-index: 5;
+  transform: scale(1.4) rotate(45deg);
+  -webkit-filter: grayscale(0.1);
+  filter: grayscale(0.1); }
+
+.home {
+  z-index: 4;
+  background-image: url("../images/habaneros1.jpg");
+  background-size: cover;
+  transition: 0.3s;
+  transform: rotate(45deg) scale(1.5);
+  animation: home 1s 0.4s ease-out both; }
+
+.seeds {
+  z-index: 3;
+  background-image: url("../images/pepperoni1.jpg");
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  background-size: cover;
+  transition: 0.3s;
+  animation: seeds 1s 1.8s ease-out backwards; }
+
+.seeds:hover {
+  z-index: 5;
+  transform: scale(1.4) rotate(45deg);
+  -webkit-filter: grayscale(0.1);
+  filter: grayscale(0.1); }
+
+.growing {
+  z-index: 2;
+  background-image: url("../images/habaneros1.jpg");
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  background-size: cover;
+  transition: 0.3s;
+  animation: growing 1s 1.8s ease-out backwards; }
+
+.growing:hover {
+  z-index: 5;
+  transform: scale(1.4) rotate(45deg);
+  -webkit-filter: grayscale(0.1);
+  filter: grayscale(0.1); }
+
+.peppers {
+  z-index: 1;
+  background-image: url("../images/paprika1.jpg");
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  background-size: cover;
+  transition: 0.3s;
+  animation: peppers 1s 1.8s ease-out backwards; }
+
+.peppers:hover {
+  z-index: 5;
+  transform: scale(1.4) rotate(45deg);
+  -webkit-filter: grayscale(0.1);
+  filter: grayscale(0.1); }
+
+/* ************* SECTION ANIMATION CLASSES ************* */
+/* ****************** FOOTER ************************** */
+/* **************************************************** */
+/* *************** FOOTER ANIMATIONS ******************** */
+@keyframes footerPeppers {
+  0% {
+    transform: scale(0.4) translate(0px, 450px) rotate(180deg); }
+  100% {
+    transform: scale(1.2) translate(0px, 80px) rotate(180deg); } }
+/* *************** FOOTER CLASSES ***************** */
+footer {
+  width: 100%;
+  height: 20%;
+  position: relative; }
+
+.footerContainer {
+  width: 100%;
+  height: 90%;
+  background-image: url("../images/paprykaTlo1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+  animation: footerPeppers 1.7s 0.8s ease-out both; }
+
+/* *************** FOOTER ANIMATION CLASSES ************ */
+/* ****************** HIDe *************************** */
+.hide {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

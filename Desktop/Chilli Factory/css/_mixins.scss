@@ -1,0 +1,28 @@
+@mixin mainMenuElements {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  background-size: cover;
+  transition: 0.3s;
+}
+
+@mixin mainMenuelementsHover {
+  z-index: 5;
+  transform: scale(1.4) rotate(45deg);
+  -webkit-filter: grayscale(0.1);
+  filter: grayscale(0.1);
+}
+
+@mixin menuPeppers {
+  z-index: 0;
+  width: 10rem;
+  height: 10rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+
+@mixin imageContain {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

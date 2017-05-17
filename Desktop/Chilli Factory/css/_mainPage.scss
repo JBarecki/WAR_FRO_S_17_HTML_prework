@@ -1,0 +1,255 @@
+@import "css/mixins";
+/* ****************** MAIN CLASSES ********************* */
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ****************** HEADER *********************** */
+
+/* *************** HEADER CLASSES ***************** */
+header {
+  width: 100%;
+  height: 40%;
+  position: relative;
+}
+
+.headerContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url("../images/paprykaTlo1.jpg");
+  @include imageContain;
+  z-index: 1;
+  position: relative;
+}
+
+.logo {
+  width: 55%;
+  height: 55%;
+  margin: 0 auto;
+    position: absolute;
+     top: 6%;
+     left: 22%;
+  z-index: 2;
+  background-image: url("../images/logo1.png");
+  @include imageContain;
+  animation: headerLogoIn 1.3s 2s ease-out both;
+}
+
+.headerText {
+  width: 32%;
+  font-family: 'Passion One', sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.1em;
+  text-align: center;
+  font-weight: 900;
+  color: black;
+  margin: 0 auto;
+  margin-bottom: 20%;
+  z-index: 1;
+  position: absolute;
+  top: 69%;
+  left: 34%;
+  animation: headerTextIn 3s 3s ease-out both;
+}
+
+/* ************ HEADER ANIMATION CLASSES **************** */
+.headerIn {
+  animation: headerIn 1.5s 0.5s ease-out both;
+}
+
+.headerOut {
+  animation: headerOut 1.5s 0.1s ease-out backwards;
+}
+
+/* ****************** SECTION ************************ */
+
+/* *************** SECTION CLASSES ***************** */
+section {
+ width: 100%;
+ height: 20%;
+}
+
+.menuPeppersBefore {
+  background-image: url("../images/ChilliTloLeft1.jpg");
+  @include menuPeppers;
+  animation: menuPeppersBefore 1.2s 2.6s ease-out both;
+}
+
+.menuPeppersAfter {
+  background-image: url("../images/ChilliTloRight1.jpg");
+  @include menuPeppers;
+  animation: menuPeppersAfter 1.2s 2.6s ease-out both;
+}
+
+.menuMain{
+  width: 100%;
+  height: 80%;
+  display: flex;
+  margin-top: 4%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.menuElement {
+   width: 9.5rem;
+   height: 9.5rem;
+   background-color: black;
+   border: 0.8rem solid white;
+   transform: rotate(45deg);
+   transition: 0.4s;
+}
+
+.menuText {
+  width: 100%;
+  height: 100%;
+  font-family: 'Passion One', sans-serif;
+  color: transparent;
+  font-size: 2.2rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  transform: rotate(-45deg);
+  z-index: 0;
+  transition: 0.4s;
+  position: relative;
+    top: 2.7rem;
+    left: 2.4rem;
+}
+
+.menuText:hover {
+  position: relative;
+  color: white;
+  text-shadow: 0.2rem 0.3rem 0.5rem black;
+}
+
+.contact{
+  z-index: 2;
+  background-image: url("../images/jalapenos1.jpg");
+  @include mainMenuElements;
+}
+
+.contact:hover {
+  @include mainMenuelementsHover;
+}
+
+.aboutUs{
+  z-index: 2;
+  background-image: url("../images/paprika1.jpg");
+  @include mainMenuElements;
+}
+
+.aboutUs:hover {
+  @include mainMenuelementsHover;
+}
+
+.gallery{
+  z-index: 3;
+  background-image: url("../images/spices1.jpg");
+  @include mainMenuElements;
+}
+
+.gallery:hover {
+  @include mainMenuelementsHover;
+}
+
+.home{
+  z-index: 4;
+  background-image: url("../images/habaneros1.jpg");
+  background-size: cover;
+  transition: 0.3s;
+  transform: rotate(45deg) scale(1.5);
+  animation: home 1s 0.1s ease-out both;
+}
+
+.seeds{
+  z-index: 3;
+  background-image: url("../images/pepperoni1.jpg");
+  @include mainMenuElements;
+}
+
+.seeds:hover {
+  @include mainMenuelementsHover;
+}
+
+.growing {
+  z-index: 2;
+  background-image: url("../images/habaneros1.jpg");
+  @include mainMenuElements;
+}
+
+.growing:hover {
+  @include mainMenuelementsHover;
+}
+
+.peppers {
+  z-index: 1;
+  background-image: url("../images/paprika1.jpg");
+  @include mainMenuElements;
+}
+
+.peppers:hover {
+  @include mainMenuelementsHover;
+}
+
+/* ************* SECTION ANIMATION CLASSES ************* */
+.sectionOut {
+animation: sectionOut 1s 0s ease-out both;
+}
+
+.peppersIn {
+  animation: peppers 1s 1.8s ease-out backwards;
+}
+
+.contactIn {
+  animation: contact 1s 1.8s ease-out backwards;
+}
+
+.seedsIn {
+  animation: seeds 1s 1.8s ease-out backwards;
+}
+
+.aboutUsIn {
+  animation: aboutUs 1s 1.8s ease-out backwards;
+}
+
+.galleryIn {
+  animation: gallery 1s 1.8s ease-out backwards;
+}
+
+.growingIn {
+  animation: growing 1s 1.8s ease-out backwards;
+}
+
+/* ****************** FOOTER ********************** */
+
+/* *************** FOOTER CLASSES ***************** */
+footer {
+  width: 100%;
+  height: 20%;
+  position: relative;
+}
+
+.footerContainer {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/paprykaTlo1.jpg");
+  @include imageContain;
+  transform: rotate(180deg);
+}
+
+/* *************** FOOTER ANIMATION CLASSES ************ */
+.footerIn {
+  animation: footerIn 1.7s 0.8s ease-out both;
+}
+
+.footerOut {
+  animation: footerOut 3s 0s ease-out backwards;
+}
+
+/* ****************** HIDE *************************** */
+.hide {
+  display: none;
+}
